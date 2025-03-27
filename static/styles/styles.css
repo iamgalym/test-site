@@ -37,7 +37,11 @@ ul li {
 }
 
 .skill {
-    width: 15px;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 
 img {
