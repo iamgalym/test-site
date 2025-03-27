@@ -2,9 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: black;
     color: white;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px) brightness(50%);
 }
 
 .container {
@@ -22,18 +38,18 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-
-h1, h2 {
-    text-align: center;
-    color: #ffcc00;
-}
-
 h1 {
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00;
 }
 
 p, ul {
@@ -50,6 +66,8 @@ ul li {
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .skill {
@@ -58,11 +76,4 @@ ul li {
     margin-right: 5px;
     vertical-align: middle;
     border-radius: 5px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: blur(2px) brightness(50%);
 }
